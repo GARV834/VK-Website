@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VK Lavish Salon- Reveal The Beauty of Skin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!--<link rel="stylesheet" href="button.css">-->
+  <script src="script.js" defer></script>
+  <script src="assets\swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="dropdown.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+  <link rel="stylesheet" href="swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!--about code with internal css-->
+  <style>
+    /* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+.button00 {
+  width: 100px;
+  position: relative;
+  padding: 10px 22px;
+  /* border-radius; */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  /* background-color: blue; */
+  transition: all 0.2s ease;
+}
+.button:active {
+  transform: scale(0.96);
+}
+.button:before,
+.button:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+.button.animate::before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.button.animate::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+  </style>
+<style type="text/css">
+
+.WA_Chat_Widget *{
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.WA_Chat_Widget .WA_FloatingButton{
+  position: fixed;
+  transform: all .5s ease;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  border-radius: 70px;
+  border-right: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+ 
+  /* padding: 2px; */
+
+  right: 5%;
+  border: 0;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+line-height: 50px;
+top: 67%;
+}
+
+
+
+.WA_Chat_Widget .WA_ChatBox{
+    position: fixed;
+    width: 360px;
+    height: auto;
+    right: 5%;
+    top: 30%;
+    font-size: 15px;
+    overflow: hidden;
+  
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.1);
+    display: none;
+    display: none;
+    z-index: 999;
+}
+
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header{
+    width: auto;
+    background: #095e54;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .avatarBox{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .avatarBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .infoBox .name{
+    color: #fff;
+    font-weight: 600;
+}
+
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .infoBox .answer_time{
+    color: #e4e4e4;
+    font-size: 14px;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .WA_Close{
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    cursor: pointer;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Header .WA_Close svg{
+    fill: #ffff;
+    margin-top: 10px;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body{
+    padding: 20px;
+    background: #e6ddd4;
+    position: relative;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(./bg-pattern.png);
+    opacity: 0.1;
+    z-index: 0;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body .message{
+    max-width: 280px;
+    background: #fff;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 8px;
+    z-index: 1;
+    position: relative;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body .message::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    left: -10px;
+    top: 0px;
+    border-radius: 3px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body .message .username{
+    color: darkgray;
+    font-weight: 500;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Body .message .message_content{
+    font-size: 14px;
+    color: #000;
+}
+
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Footer{
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Footer .btn{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 1000px;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.WA_Chat_Widget .WA_ChatBox .WA_ChatBox_Footer .btn.btn-whatsapp{
+    background: #095e54;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+#phone .ph {
+  position: fixed;
+  transform: all .5s ease;
+  background-color: #000000;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  border-radius: 50px;
+  border-right: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 30px;
+  top: 75%;
+  right: 5%;
+  border: 0;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+line-height: 50px;
+}
+#phone.ph:before{
+content: "";
+position: absolute;
+z-index: -1;
+left: 0;
+top: 50%;
+transform: translateX(-50%) translateY(-50%);
+display: block;
+width: 50px;
+height: 50px;
+background-color:#b6b6b6;
+border-radius: 50%;
+-webkit-animation:pulse-border 1500ms ease-out infinite;
+ animation:pulse-border 1500ms ease-out infinite;
+}
+#phone.ph:focus{
+border: none;
+outline: none;
+ }
+ @keyframes pulse-border {
+0%{transform: translateX(-50%) translateY(-50%) translatez(0) scale(1); opacity: 1;} 
+100% {transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5); opacity:0;}
+
+ }
+ #book-btn .apb{
+  position: fixed;
+  transform: all .5s ease;
+  background-color: #000000;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  border-right: none;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 20px;
+  bottom: 70px;
+  width: 170px;
+  height: 50px;
+  padding-bottom: 20px;
+  right: 20px;
+  border: 0;
+  z-index: 9999;
+  
+line-height: 50px;
+} 
+#book-btn a{
+  color: #ffffff;
+}
+#book-btn .apb:hover{
+  /* box-shadow: 1px 1px 1px  1px black; */
+ background-color: goldenrod;
+ color: black;
+}
+#book-btn .abp:before{
+content: "";
+position: absolute;
+z-index: -1;
+right: 50%;
+top: 50%;
+transform: translateX(-50%) translateY(-50%);
+display: block;
+width: 60px;
+height: 60px;
+/* background-color: #000000; */
+border-radius: 50%;
+-webkit-animation:pulse-border 1500ms ease-out infinite;
+ animation:pulse-border 1500ms ease-out infinite;
+}
+#book-btn .apb:focus{
+border: none;
+outline: none;
+ }
+ @keyframes pulse-border {
+0%{transform: translateX(-50%) translateY(-50%) translatez(0) scale(1); opacity: 1;} 
+100% {transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5); opacity:0;}
+
+} 
+
+/* *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;} */
+
+header{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+	z-index: 2;
+}
+#logo{
+    line-height: 60px;
+    margin-left: 40px;
+    display: inline-block;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: bold;
+	color: #00a7ff; /* blue */
+}
+#logo:hover{
+    color: #eef9ff; /* white */
+}
+#logo-s{
+	color: #eef9ff; /* white */
+	margin-left: 5px;
+}
+#logo:hover #logo-s{
+	color: #00a7ff; /* blue */
+}
+.sign{
+	float: right;
+	line-height: 60px;
+	margin-right: 40px;
+}
+.sign a{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.act{
+	border: 2px solid #fff;
+	border-radius: 50px;
+	padding: 6px 15px;
+}
+.sign a:hover{
+	color: #000000; /* blue */
+	border-color: #000000; /* blue */
+}
+/* /1 */
+
+/* 2 */
+.slider88{
+	position: relative;
+	width: 100%;
+	background: #e8e5e5; /* darckblue */
+  /* object-fit: fill; */
+}
+.myslide88{
+	height: 655px;
+	display: none;
+	overflow: hidden;
+}
+
+.prev88, .next88{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev88:hover, .next88:hover{
+	color: #00a7ff; /* blue */
+}
+.next88{
+	right: 0;
+}
+.dotsbox88{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot88{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+/* /2 */
+
+/* javascript */
+.active, .dot88:hover{
+	border-color: #00a7ff; /* blue */
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade88 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+
+/* 3 */
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+.agg img{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 40s;
+  	animation-name: zoomin;
+  	animation-duration: 40s;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+/* /4 */
+
+
+
+/* 5 */
+@media screen and (max-width: 800px){
+	.myslide88{
+		height: 500px;
+	}
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+}
+/* /6 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="VK-WHITE-LOGO.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+<!-- whatsapp -->
+<div class="WA_Chat_Widget" data-position="bottom-right">
+  <div class="WA_ChatBox">
+      <div class="WA_ChatBox_Header">
+          <div class="avatarBox">
+              <img src="VK-WHITE-LOGO.png" alt="Chat Avatar">
+          </div>
+          <div class="infoBox">
+              <h4 class="name">Welcome To VK Lavish Salon</h4>
+              <!-- <span class="answer_time">Typically replies within a day</span> -->
+          </div>
+          <button class="WA_Close" onclick="hideChatbox()"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                      d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+              </svg></button>
+      </div>
+      <div class="WA_ChatBox_Body">
+          <div class="message">
+              <h4 class="username">VK Lavish</h4>
+              <div class="message_content">
+                  <p>Hey There, How can I help you?</p>
+              </div>
+          </div>
+      </div>
+      <div class="WA_ChatBox_Footer">
+          <a class="btn btn-whatsapp" href="http://wa.me/6363055855" target="_blank">Start Chat</a>
+      </div>
+  </div>
+  <div class="WA_FloatingButton" onclick="toggleChatbox()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#4FCE5D" viewBox="0 0 90 90">
+          <path
+              d="M90 43.841c0 24.213-19.779 43.841-44.182 43.841a44.256 44.256 0 01-21.357-5.455L0 90l7.975-23.522a43.38 43.38 0 01-6.34-22.637C1.635 19.628 21.416 0 45.818 0 70.223 0 90 19.628 90 43.841zM45.818 6.982c-20.484 0-37.146 16.535-37.146 36.859 0 8.065 2.629 15.534 7.076 21.61L11.107 79.14l14.275-4.537A37.122 37.122 0 0045.819 80.7c20.481 0 37.146-16.533 37.146-36.857S66.301 6.982 45.818 6.982zm22.311 46.956c-.273-.447-.994-.717-2.076-1.254-1.084-.537-6.41-3.138-7.4-3.495-.993-.358-1.717-.538-2.438.537-.721 1.076-2.797 3.495-3.43 4.212-.632.719-1.263.809-2.347.271-1.082-.537-4.571-1.673-8.708-5.333-3.219-2.848-5.393-6.364-6.025-7.441-.631-1.075-.066-1.656.475-2.191.488-.482 1.084-1.255 1.625-1.882.543-.628.723-1.075 1.082-1.793.363-.717.182-1.344-.09-1.883-.27-.537-2.438-5.825-3.34-7.977-.902-2.15-1.803-1.792-2.436-1.792-.631 0-1.354-.09-2.076-.09s-1.896.269-2.889 1.344c-.992 1.076-3.789 3.676-3.789 8.963 0 5.288 3.879 10.397 4.422 11.113.541.716 7.49 11.92 18.5 16.223C58.2 65.771 58.2 64.336 60.186 64.156c1.984-.179 6.406-2.599 7.312-5.107.9-2.512.9-4.663.631-5.111z">
+          </path>
+      </svg>
+  </div>
+</div>
+<script>
+  let isChatboxVisible = false;
+  const chatbox = document.querySelector(".WA_Chat_Widget .WA_ChatBox");
+  function hideChatbox() {
+      isChatboxVisible = false;
+      chatbox.style.display = "none";
+  }
+  function toggleChatbox() {
+      isChatboxVisible = !isChatboxVisible;
+      chatbox.style.display = isChatboxVisible ? "block" : "none";
+  }
+</script>
+  <!--  -->
+  <div id="phone">
+    <a href="tel:6363055855" target="_blank" id="toggle2" class="ph">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <div id="book-btn">
+    <a href="#" target="_blank" id="toggle2" class="apb" >
+    <button style="color: #fff; ">
+     <span style="text-align: center; margin-left: 30px;" >Book Now</span></button> 
+    </a>
+  </div>
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+
+    <header class="headerbox" id="headerBox">
+      <nav class="navbox containerBox">
+         <a href="index.html" class="nav__logobox">
+           <img src="logo.png" alt="" srcset="" style="padding: 20px; width:170px">
+           
+          </a>
+          <div class="flexbox">
+            
+          </div>
+          <div class="nav__menubox" id="nav-menubox">
+            <ul class="nav__listbox">
+              <li class="nav__itembox">
+                <a href="index.html" class="nav__linkbox">
+                     <i class="ri-arrow-right-up-line" style="color: goldenrod;" ></i>
+                     <span style="font-size: 2rem;">Home</span>
+                  </a>
+                </li>
+
+               <li class="nav__itembox ServiceDrop">
+                  <a href="" class="nav__linkbox">
+                     <i class="ri-arrow-right-up-line" style="color: goldenrod;" ></i>
+                     <span style="font-size: 2rem;">Services     </span>
+                       <ul id="Largedropdown">
+                       <a href="" style="display: inline-block;"></a>
+                       <a href="men.html">
+                         <li>Men</li>
+
+                       </a>
+                       <a href="women.html">
+                         <li>Women</li>
+
+                       </a>
+                       </ul>
+                  </a>
+               </li>
+
+               <li class="nav__itembox">
+                  <a href="#" class="nav__linkbox nav__itembox">
+                     <i class="ri-arrow-right-up-line" style="color: rgb(253, 216, 122);" ></i>
+                     <span style="font-size: 2rem;">Shop</span>
+                  </a>
+               </li>
+
+               <li class="nav__itembox">
+                  <a href="offer.htm" class="nav__linkbox nav__itembox">
+                     <i class="ri-arrow-right-up-line" style="color: goldenrod;" ></i>
+                     <span style="font-size: 2rem;">Offers</span>
+                  </a>
+                </li>
+                
+                <li class="nav__itembox">
+                  <a href="contact.html" class="nav__linkbox nav__itembox">
+                    <i class="ri-arrow-right-up-line" style="color: goldenrod;" ></i>
+                    <span style="font-size: 2rem;">Contact Us</span>
+                  </a>
+                </li>
+                <li class="nav__itembox">
+                  <a href="about.html" class="nav__linkbox nav__itembox">
+                    <i class="ri-arrow-right-up-line" style="color: goldenrod;" ></i>
+                    <span style="font-size: 2rem;">About Us</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+              
+            <!-- Close button -->
+            <!-- <div class="nav__closebox" id="nav-closebox">
+               <i class="ri-close-large-line"></i>
+            </div> -->
+
+            <div class="nav__socialbox respo-link" style=" margin-left: 100px;">
+               <a href="https://www.instagram.com/vklavishsalon.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="nav__social-linkbox">
+                 <img src="intsta.png" alt="" srcset="" width="35px">
+               </a>
+
+               <a href="https://www.facebook.com/vklavishsalon.in?mibextid=ZbWKwL" target="_blank" class="nav__social-linkbox">
+                <img src="facebook.png" alt="" width="35px">
+               </a>
+               
+               <a href="http://www.youtube.com/@vklavishsalon/" target="_blank" class="nav__social-linkbox">
+                  <img src="utube.png" alt="" width="35px">
+                 
+               </a>
+
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__togglebox" id="nav-togglebox" data-nav-toggler>
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+  </header>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script>
+     $(document).ready(function(){
+        $(window).on('scroll', function(){
+           if ($(window).scrollTop()) {
+                  $("header").addClass('bgc');
+           }else{
+                  $("header").removeClass('bgc');
+           }
+        });
+     });
+  </script>
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar active" data-navbar>
+
+      <div class="wrapper">
+        <a href="index.html" class="logo">
+          <img src="logo1.png" width="179" height="26" alt="Glowing">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li>
+          <a href="about.html" class="navbar-link" data-nav-link>About</a>
+        </li>
+
+        <li>
+          <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+        </li>
+
+        <li>
+          <a href="offer.htm" class="navbar-link" data-nav-link>Offer</a>
+        </li>
+       
+
+        <li>
+          <a href="contact.html" class="navbar-link" data-nav-link>Contact Us</a>
+        </li>
+<li>
+          <div style="display: flex;">
+                              <div>
+                                <a class="navbar-link" data-nav-link> Services </a>
+                              </div>
+
+                              <div class="dropdown">
+                               <span  class="rotate  "> <img src="arrow-right-s-line.png" alt="" class=" dropdown-toggle "  >
+                              </span></button>
+                                <div class="dropdown-menu">
+                                    <a href="men.html">Men</a>
+                                    <a href="women.html">Women</a>
+                                    
+                                </div>
+                            </div>
+          </div>
+        <script src="dropdown.js"></script>
+      
+
+
+
+    
+        </li>
+      </ul>
+      <div class="nav__socialbox" style=" margin-top: 100px;">
+        <a href="https://www.instagram.com/vklavishsalon.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="nav__social-linkbox">
+          <img src="intsta.png" alt="" srcset="" width="35px">
+        </a>
+
+        <a href="https://www.facebook.com/vklavishsalon.in?mibextid=ZbWKwL" target="_blank" class="nav__social-linkbox">
+         <img src="facebook.png" alt="" width="35px">
+        </a>
+        
+        <a href="http://www.youtube.com/@vklavishsalon/" target="_blank" class="nav__social-linkbox">
+           <img src="utube.png" alt="" width="35px">
+          
+        </a>
+
+  </div>
+    </div>
+
+    <div class="overlay active" data-nav-toggler data-overlay></div>
+  </div>
+
+
+  <main>
+    <article>
+
+      <!-- CONTACT US  -->
+      <section class="section feature" aria-label="feature" data-section style="background-color:hsl(0, 2%, 92%) ; text-align: center;" >
+        <div class="container">
+
+          <div class="container101" >
+            <div  class="left"style=" background: url('recp.jpg') center/cover no-repeat ;" >   
+              </div>
+      
+              <div class="right" >
+                <h2>Contact Us</h2>
+                <form action="">
+                  <input type="text" class="field" placeholder="Name">
+                  <input type="email" class="field" placeholder="Email">
+                  <input type="text" class="field" placeholder="Phone Number">
+                  <input type="text" placeholder="Comments" class="field" style="min-height:150px ; background-color: transparent;">
+                  <!-- <textarea name="Message"  class="field area" placeholder="Message"> </textarea> -->
+        
+                    <button class="book-Now">Submit</button>
+
+          
+                </form>
+              </div>       
+          </div>
+
+        </div>
+
+        </div>
+      </section>
+      <!-- CONTACT US  -->
+
+      
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+        <section class="section blog" id="blog" aria-label="blog" data-section style="background-color: rgb(201, 201, 201);"  >
+
+        <div class="container ">
+               
+          <div class="wrapperSer">
+          
+         
+                 <div class="content-boxSer">
+                   <div class="cardSer">
+                      
+                       <img src="contact.png" alt="" width="70px">   
+                       <p style="text-align:center ;">
+                        080-4814-4788 <br>6363055855
+                        <br> vklavishsalon@gmail.com
+                      </p>
+                    
+                  </div>
+                   <div class="cardSer">
+                      
+                       <img src="time.png" alt="" width="70px">   
+                       <p style="text-align:center ;">
+                         9:00 AM to 
+                         <br>
+                         9:00 PM
+
+                       </p>
+             
+                    
+                  </div>
+                
+                    <div class="cardSer">
+                        <img src="location.png" alt="" width="70px">   
+                        <!-- <i class="bx bx-mail-send bx-md"></i> -->
+                 
+                        <!-- <p> Iure ad fuga, voluptas nisi odit blanditiis aut culpa quasi. Expedita deleniti molestias hic -->
+                            <p style="text-align:center ;" >
+                              NO: 45, MANIPAL COUNTRY ROAD, CIRCLE, MAIN ROAD, opp. to Indian Oil
+
+Petrol bunk, Duo City Layout, Singasandra, Bengaluru,
+
+                            </p>
+                           
+                            
+                        </div>
+                        
+                            
+                        
+                            
+                        
+                           
+                           
+                 </div>
+        </div>
+        </div>
+
+</section>
+
+    </article>
+  </main>
+      <!-- 
+     location
+      -->
+      <div class="location" style="text-align: center;">
+        <h1 style="color: rgb(54, 54, 54) ; padding:20px; font-size: 4.0rem;"> Locate Us</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.
+        09489995396825!2d77.64054853258119!3d12.874352557297957!2m3!1f0!2f0!3f0!3m2
+        !1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6b47d3ca1a29%3A0x9cf4e33bfd5c6895!2sV
+        K%20Lavish%20Unisex%20Salon!5e0!3m2!1sen!2sin!4v1715613718658!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+      
+     
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Find a location nearest you. See <a href="#" class="link">Our Stores</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">080-4814-4788</p>
+            <p class="footer-list-text bold">6363055855</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">vklavishsalon@gmail.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">New Products</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Best Sellers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Bundle & Save</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online Gift Card</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Infomation</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Start a Return</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Good emails.</p>
+
+          <p class="newsletter-text">
+            Enter your email below to be the first to know about new collections and product launches.
+          </p>
+
+          <form action="" class="newsletter-form" style="display: flex;">
+            <div><input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field"></div>
+<div style="background-color: #25d366; margin-top: 30px;"> <button type="submit" class="btn btn-primary" >Subscribe</button></div>
+           
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          
+          <ul class="social-list">
+
+            <!--<li> -->
+            <!--  <a href="#" class="social-link">-->
+            <!--    <ion-icon name="logo-twitter"></ion-icon>-->
+            <!--  </a>-->
+            <!--</li>-->
+
+            <li>
+              <a href="https://www.facebook.com/vklavishsalon.in?mibextid=ZbWKwL" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/vklavishsalon.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="http://www.youtube.com/@vklavishsalon" class="social-link" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="logo1.png" width="179" height="26" loading="lazy" alt="Glowing">
+        </a>
+
+        <img src="pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

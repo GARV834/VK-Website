@@ -1,0 +1,286 @@
+
+/*LARGE DISPLAY DROPDOWN */
+#Largedropdown{
+
+  background-color: rgba(0, 0, 0,0.7);
+  font-size: 2rem;
+  color: rgb(235, 192, 84);
+  left:30%;
+  opacity: 0;
+  position: absolute;
+  top: 100px;
+  visibility: hidden;
+  z-index: 1;
+}
+li.ServiceDrop:hover ul#Largedropdown{
+  opacity: 1;
+  top: 35px;
+  visibility: visible;
+}
+ul#Largedropdown {
+float: none;
+width: 20%;
+}
+ul#Largedropdown a li{
+  /* margin: 0 auto; */
+  padding-left: 50px;
+  /* padding: 10px; */
+}
+#Largedropdown li:hover{
+background-color: rgb(109, 109, 109);
+}
+/*MOBILE DROPDOWN */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  
+  }
+  
+  .dropdown-toggle {
+  
+  
+    /* padding: 10px 20px; */
+    margin-top: 7px;
+    border: none;
+  display: flex;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .dropdown-toggle:focus {
+    outline: none;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown.show .dropdown-menu {
+    display: block;
+  }
+  .dropdown span.rotate img{
+  width: 20px;
+  margin-left: 10px;
+  }
+  .dropdown span.rotate img{
+  transform: rotate(90deg);
+  
+  }
+  @media screen and (max-width:992px) {
+    .dropdown-menu{
+      max-width: 100px;
+    }
+    .dropdown-menu a{
+      font-size: 17px;
+      padding: 7px 7px;
+    }
+   }
+   
+/*REVIEW */
+.Resection-title{
+     text-align: center; font-weight: 100; font-size: 5rem; color: black; margin-bottom: 40px;
+}
+.Review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  /* background: #f1f4fd; */
+}
+
+.Recontainer {
+  max-width: 1200px;
+  width: 95%;
+
+  /* margin-bottom: 20%; */
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 2.2rem;
+  /* background: #000; */
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 50%; */
+  transform: translateY(-50%);
+}
+
+.slider-wrapper .slide-button:hover {
+  background: #404040;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+  left: -25px;
+  display: none;
+}
+
+.slider-wrapper .slide-button#next-slide {
+  right: -25px;
+}
+
+.slider-wrapper .image-list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+  width: 325px;
+  /* height: 400px; */
+  object-fit: cover;
+}
+
+.container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+.review-button{
+    color: rgb(255, 255, 255); background-color: black; 
+    margin-left:  40%;padding: 10px; position: absolute; 
+    cursor: pointer; z-index: -1; 
+    top:97%; 
+    font-size: 20px;
+     border-radius:4px;
+}
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
+  .review-button{
+    color: rgb(255, 255, 255); background-color: black; 
+    margin-left:  40%;padding: 10px; position: absolute; 
+    cursor: pointer; z-index: -1; 
+    top:97%; 
+    font-size: 15px;
+}
+}
+   @media only screen and (max-width: 992px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 400px;
+    object-fit:cover;
+    /*height: 380px;*/
+  }
+
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
+  .Resection-title{
+      font-size: 3rem;
+  }
+  .review-button{
+      height:35px;
+      border-radius:4px;
+     
+
+      font-size:15px;
+
+   /*left:35%;*/
+  }
+}
+ 
